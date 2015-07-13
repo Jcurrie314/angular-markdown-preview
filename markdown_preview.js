@@ -26,7 +26,7 @@
 
   .directive('iiMdPreview', function() {
     return {
-      template: "<h1>hello</h1><div layout><textarea class='MdPreview-markdown' name='{{textareaName}}' ng-model='body' ng-change='md2Html()' flex='50' style='order:1 !important;'></textarea><div class='MdPreview-html' ng-bind-html='htmlSafe' flex='50' style='order:2 !important;'/></div>",
+      template: "<div layout><textarea class='MdPreview-markdown' name='{{textareaName}}' ng-model='body' ng-change='md2Html()' flex='50' style='order:1 !important;'></textarea><div class='MdPreview-html' ng-bind-html='htmlSafe' flex='50' style='order:2 !important;'/></div>",
       restrict: 'C',
       replace: true,
       controller: 'Ctrl',
